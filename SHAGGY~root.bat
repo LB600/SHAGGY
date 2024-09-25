@@ -37,35 +37,20 @@ echo   \::::\:;:·´                          `·\;'            '\::\;'         
 echo     '`*'´‘                                 '               `¨'                                     '\:·´'                         '\:·´'                   '               
 echo --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-set /p ans="SHAGGY~root: "
+set /p ans="URL: "
 
 
 if %ans%==1 (
 goto a
 )
 
-if %ans%==2 (
-goto b
-)
-
 :a
 cls
-echo you wrote 1
-echo press enter to restart.
+tracert %ans%
 pause >nul
 SET WAIT_TIME=4
 goto c
 pause >nul
-
-:b
-cls
-echo you wrote 2
-echo press enter to restart.
-pause >nul
-SET WAIT_TIME=4
-goto c
-
-
 
 pause >nul
 
